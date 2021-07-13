@@ -1,0 +1,183 @@
+/* p{
+  color: pink;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+/* p {
+  font-size: 25px;
+  color: crimson;
+} */
+
+.first {
+  color: orange;
+  /* Overide    */
+}
+/* 
+#content {
+  color: green !important;
+} */
+
+/* !important (bootstrap) > iniline > id (unqiue) > class > elements > *  */
+
+.plan {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  color: black;
+  font-family: "Inter", sans-serif;
+}
+
+.plan-heading {
+  font-size: 24px;
+}
+
+.plan-feature {
+  list-style: none;
+  padding: 0px;
+}
+
+/* :before */
+
+.plan-feature li:before {
+  content: "✓";
+  /*   padding-right: 5px; */
+  margin-right: 16px;
+  /*   border: 3px solid black; */
+}
+
+.plan-feature-pro li:last-child:before {
+  /*   color: crimson; */
+  content: "✖";
+}
+
+/* .plan-feature li:after{
+  content: '*';
+    color: red;
+} */
+
+.plan-feature li {
+  margin-bottom: 16px;
+  display: flex;
+}
+
+/* DRY - Dont Repeat Yourself*/
+.plan-feature li:last-child {
+  /*   color: crimson; */
+  opacity: 0.3;
+}
+
+.plan-feature-intro li:nth-child(even){
+    opacity: 0.3 !important;
+}
+.plan-feature-intro li:nth-child(3){
+    opacity: 0.3;
+}
+.plan-feature-base li:nth-child(3){
+    opacity: 0.3;
+}
+.plan-feature-base li:nth-child(4){
+    opacity: 0.3;
+}
+.plan-amount {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.plan-duration {
+  opacity: 0.6;
+}
+
+.plan-choose {
+  width: 100%;
+  background: #8645ff;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 12px;
+  font-weight: bold;
+}
+/* .plan-feature li:nth-child(even){
+  color: pink;
+} */
+
+.plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-save {
+  background: white;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  color: #8645ff;
+  font-weight: bold;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
+.parent{
+    height: 100%;
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+    width: auto;
+/*    margin-top: 20px;*/
+    flex-direction: column;
+    align-items: center;
+}
+.parent-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.parent-2{
+    display: flex;
+}
+.p1{
+    font-family: "Inter", sans-serif;
+    opacity: 0.5;
+    margin-top: -5px; 
+    width: 70%;
+    text-align: center;
+    
+}
+.p2{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    margin: 50px;
+}
+
+.head-heading{
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+.head-des{
+    font-family: "Inter", sans-serif;
+    align-content: center;
+    width:    
+}
+
+.plan:hover {
+  background: rgb(30,27,88);
+  border-radius: 24px;
+  padding: 24px;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+.plan-choose::after{
+    content: "Choose";
+}
+.plan-choose:hover::after{
+   content: "Try 1 Month"; 
+}
